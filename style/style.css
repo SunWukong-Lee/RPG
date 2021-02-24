@@ -1,0 +1,136 @@
+body{
+    background-color: rgb(38, 11, 82);
+    text-align: center;
+}
+*{
+    padding:0;
+    margin:0;
+}
+nav{
+    width: 100%;
+    display: grid;
+    grid-template: 300px/auto auto auto;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.pers{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto;
+    border-radius: 100%;
+}
+.pers:hover{
+    width: 250px;
+    height: 250px;
+}
+#monge{
+    background-image:url(../images/Monge1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: width 1s,height 1s;
+}
+#monge:hover{
+    background-image:url(../images/Monge.png);
+    background-size: cover;
+    box-shadow: 1px 1px 10px 10px rgb(70, 69, 69);
+}
+#alquimista{
+    background-image:url(../images/Alquimista.jpg);
+    background-size: cover;
+    transition: width 1s,height 1s;
+}
+#alquimista:hover{
+    background-image:url(../images/Alquimistat.jpg);
+    background-size: cover;
+    box-shadow: 1px 1px 10px 10px rgb(86, 224, 32);
+}
+#zeiroty{
+    background-image:url(../images/zeiroty.jpg);
+    background-size: cover;
+    transition: width 1s,height 1s;
+}
+#zeiroty:hover{
+    background-image:url(../images/zeirotyt.jpg);
+    background-size: cover;
+    box-shadow: 1px 1px 10px 10px rgb(199, 207, 207);
+}
+article{
+    width: 100%;
+    color: rgb(34, 204, 11);
+    margin: auto;
+}
+table{
+    margin: auto;
+    border:2px green solid;
+    border-collapse: collapse;
+}
+tr,td,th{
+    border-left: 2px solid green;
+    border-right: 2px solid green;
+    border-bottom: 1px solid green;
+    padding: 10px;
+}
+article div > a{
+    color: red;
+    text-decoration: none;
+}
+#cacados{
+    margin: auto;
+    display: none;
+    width: 200px;
+    position: relative;
+}
+#Robo::before{
+    content: "";
+    display: block;
+    position: absolute;
+    right:60%;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/Robo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Rei::before{
+    content: "";
+    display: block;
+    position: absolute;
+    right:70%;
+    width: 20px;
+    height:20px;
+    background-image: url(../images/Rei\ da\ selva.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    position: absolute;
+    animation: carregar0 3s;
+}
+article{
+    position: absolute;
+    top: 35%;
+    animation: carregar1 3s;
+}
+@keyframes carregar0{
+    from{
+        opacity: 0;
+        top: -5%;
+    }
+    to{
+        opacity: 1;
+        top: 4%;
+    }
+}
+@keyframes carregar1{
+    from{
+        opacity: 0;
+        top: 30%;
+    }
+    to{
+        opacity: 1;
+        top: 35%;
+    }
+}
