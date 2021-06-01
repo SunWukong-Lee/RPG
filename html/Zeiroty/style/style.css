@@ -9,13 +9,16 @@ header{
     text-align: center;
 }
 #monge-container{
-    width: 650px;
+    width: 400px;
     margin: auto;
     display: flex;
     flex-flow: row;
 }
 #img-div{
     width: 400px;
+}
+section{
+    width:100%;
 }
 img{
     width: 100%;
